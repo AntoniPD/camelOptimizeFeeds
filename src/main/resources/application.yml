@@ -1,0 +1,51 @@
+spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
+  profiles: dev
+
+mkdwnCandidateInputFolder: data/input
+mkdwnCandidateArchiveFolder: ../archive
+mkdwnCandidateErrorFolder: ../error
+mkdwnCandidateOutputFolder: data/output
+
+mkdwnCalendarOutputFolder: data/output
+mkdwnCalendarInputUrl: http://319d85e6-aeb8-4ee0-8101-8ba8ae910872.mock.pstmn.io/get
+
+archiveFolderLocation: ./data/archive
+archiveDuration: 604800000
+
+---
+spring:
+  profiles: stage
+
+mkdwnCandidateInputFolder: data/input
+mkdwnCandidateArchiveFolder: ../archive
+mkdwnCandidateErrorFolder: ../error
+mkdwnCandidateOutputFolder: data/output
+
+mkdwnCalendarOutputFolder: data/output
+mkdwnCalendarInputUrl: http://319d85e6-aeb8-4ee0-8101-8ba8ae910872.mock.pstmn.io/get
+
+archiveFolderLocation: ./data/archive
+archiveDuration: 604800000
+
+---
+spring:
+  profiles: prod
+
+mkdwnCandidateInputFolder: data/input
+mkdwnCandidateArchiveFolder: ../archive
+mkdwnCandidateErrorFolder: ../error
+mkdwnCandidateOutputFolder: data/output
+
+mkdwnCalendarOutputFolder: data/output
+mkdwnCalendarInputUrl: http://319d85e6-aeb8-4ee0-8101-8ba8ae910872.mock.pstmn.io/get
+
+archiveFolderLocation: ./data/archive
+archiveDuration: 604800000
+
+---
